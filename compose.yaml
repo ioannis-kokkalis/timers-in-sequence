@@ -1,0 +1,9 @@
+services:
+  server-timers-in-sequence:
+    build:
+      dockerfile: dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - .:/webapp
+    tty: true
